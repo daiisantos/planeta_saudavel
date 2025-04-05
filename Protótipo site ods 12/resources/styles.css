@@ -1,0 +1,223 @@
+menu {
+    list-style: none;
+    background-color: #535353;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    margin-top: 0%;
+}
+
+#logo {
+    display: flex;
+    flex-direction: initial;
+    
+}
+
+menu li {
+    margin-left: 60px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    color: greenyellow;
+    
+}
+a:active{
+    color:aquamarine
+}
+
+body {
+    background-color: #aca38e;
+    margin: 0px;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+}
+
+#BannerCard {
+    background-color: #364135;
+    padding: 9px;
+    display: flex;
+    width: 60%;
+    border-radius: 30px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+#BannerCard p {
+    color: #c4dbac;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    padding-left: 86px;
+ 
+}
+
+#textBannerCard {
+
+    display: space-around;
+}
+
+#imgLogo {
+    display: flex;
+    justify-content: right;
+}
+
+.display-center {
+    display: flex;
+    justify-content: center;
+}
+
+.card-space {
+    gap: 30px;
+}
+
+.textConteiner {
+    width: 70%;
+    color: #364135;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+.display-center{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#txtdiy{
+    width: 70%;
+    color: #364135;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+#txtdiy span{
+    color: brown;
+}
+
+#imgdiy{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+   gap: 20px; 
+   margin: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.zom:hover{
+
+transform: scale(1.1);
+}
+  
+#sobre{
+    width: 90%;
+    color: #364135;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size:x-large;
+    font-style: oblique;
+}
+#contato{
+    width: 90%;
+    color: #364135;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size:x-large;
+}
+#consequencias{
+    width: 100%;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-size:x-large;
+    color: #474f46;
+
+}
+#consequencias span{
+    color: rgb(80, 77, 77);
+    text-align: center;
+}
+#formatacao{
+    width: 100%;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-size:x-large;
+    color:#364135;
+}
+#formatacao p{
+    font-family:Arial;
+}
+#formatacao span{
+    font-weight: bold;
+}
+#formatacao h2{
+    font-family: 'Times New Roman';
+}
+#formatacao h3{
+    font-family: 'Times New Roman';
+}
+.diy-detalhes{
+padding: 20px;
+}
+.diy-detalhes h3{
+    font-size: 30px;
+    color: #28292b;
+}
+#img-detalhes{
+    border-radius: 10px;
+    box-shadow: rgb(84 89 95 / 42%) 0px 8px 24px;
+    
+}
+#passos{
+    width: 100%;
+    font-family:'Arial';
+    font-optical-sizing: auto;
+    font-size:x-large;
+}
+#forma{
+    padding: 20px;
+}
+#sombra{
+    border-radius: 10px;
+    box-shadow: rgb(84 89 95 / 42%) 0px 8px 24px;
+}
+#passos{
+    font-style: oblique;
+}
+.forma{
+    padding: 2%;
+}
+.img-contener{
+    width: 20%;
+}
+#legenda{
+    width: 100%;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    color: #28292b;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#lista-materiais{
+    font-family:'Segoe UI';
+    font-style: oblique;
+    font-size: larger;
+
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+
+/*function getestadosigla(sigla){
+
+var estados= {"BA":"Bahia",
+ "PE": "Pernambuco", 
+ "AL":"Alagoas",
+  "PB":"Paraiba", 
+ "MA":"Maranhão"  }
+ sigla=sigla.toUpperCase();
+if(estados[sigla]!=undefined){
+  document.write("o estado é:"+estados[sigla])
+}else{
+  document.write("nao existe")
+}
+
+}
+
+var nomesigla=prompt("Qual a sigla?")
+getestadosigla(nomesigla)*/ 
+
+/*function valordevido(cod, qntd){
+
+var tabela= {
+
+1001:5.32,
+1324: 6.45,
+6548: 2.37,
+987: 5.32,
+7623: 6.45
+
+}
+if(tabela[cod]!=undefined){
+var total= qntd*tabela[cod]
+document.write("o codigo é:"+cod+"e o total é: "+total)
+}else{
+  doccument.write("nao existe")
+}
+
+
+}
+
+var cod= prompt("qual o codigo?")
+var qntd=prompt("qual a quantidade?")
+valordevido(cod, qntd)*/
+
+/*function salario(salariobase){
+
+var vt= 0.02*salariobase
+var vr=0.03*salariobase
+var liquido= salariobase-(vr+vt)
+
+document.write("seu salario liquido é: "+liquido)
+
+}
+var salariobase=parseFloat(prompt("qual o seu salario base?"))
+salario(salariobase)*/
+
+/*function verificacao(numero, consumo){
+  document.write("apartamento"+numero+"consumo: "+consumo+ " kw"+ "<br>")
+  if(consumo>100){
+    document.write("alto consumo!!!")
+  }
+}
+
+verificacao( parseInt (prompt("Qual o numero do seu apartamento?")), parseInt(prompt("qual o seu consimo??")))
+verificacao( parseInt (prompt("Qual o numero do seu apartamento?")), parseInt(prompt("qual o seu consimo??")))
+verificacao( parseInt (prompt("Qual o numero do seu apartamento?")), parseInt(prompt("qual o seu consimo??")))*/
+
+var notas=[1, 10, 6, 7];
+
+function getmedias(notadoaluno){
+  soma=0
+
+  notas.forEach(nota=>{
+    soma+=nota
+  });
+  
+  return soma/notadoaluno.length;
+}
+function validarAprovacao(media){
+  if(media>=6){
+    return "O aluno foi aprovado!"
+  }else{
+    return "O aluno foi reprovado"
+  }
+}
+
+console.log(validarAprovacao(getmedias(notas)))
+
+
+/*function verificarPoluicao(indice, grupo) {
+  document.write("Índice de poluição: " + indice + "<br>");
+
+  if (indice >= 0.5) {
+    document.write(" Todos os grupos devem paralisar suas atividades!<br>");
+  } else if (indice >= 0.4 && grupo <= 2) {
+    document.write(" Indústrias do grupo 1 e 2 devem suspender suas atividades!<br>");
+  } else if (indice >= 0.3 && grupo == 1) {
+    document.write(" Indústrias do grupo 1 devem suspender suas atividades!<br>");
+  } else {
+    document.write(" Índice dentro do aceitável.<br>");
+  }
+}
+
+
+var indicePoluicao = parseFloat(prompt("Digite o índice de poluição:"));
+var grupoIndustria = parseInt(prompt("Digite o grupo da empresa (1, 2 ou 3):"));
+verificarPoluicao(indicePoluicao, grupoIndustria);
+*/
+
+
+
+/*notas=[4, 5, 7, 10];
+
+function getnotas(notasalunos){
+soma=0
+notas.forEach(nota=>{
+  soma+=nota
+});
+return soma/notasalunos.length
+
+}
+
+function getmedia(media){
+if (media>=6){
+  return "aprovado!"
+}else{
+  return "reprovado"
+}
+}
+console.log(getmedia(getnotas(notas)))
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var notas=[8, 7, 9.5, 2];
+
+function getMedia(notasdoaluno){
+  var soma= 0;
+  notas.forEach(nota => {
+    soma+=nota;
+    
+  });
+  return soma/notasdoaluno.length;
+
+}
+
+function validarAprovacao(media){
+  if(media>=6){
+    return "O aluno foi aprovado!"
+  }else{
+    return "O aluno foi reprovado"
+  }
+}
+
+console.log(validarAprovacao(getMedia(notas)))
+console.log(validarAprovacao(6.256))
+console.log('O aluno foi aprovado')
+*/
+
+
+
+
+
+
+
+
+/*array.forEach(function myfunction(valor){
+
+})*/
+
+
+
+
+
+
+
+
+/*
+function getNomeEstado(sigla){
+
+  var estado = {
+    "PE":"Pernambuco", 
+    "BA":"Bahia"
+  }
+
+  if(estado[sigla]!=undefined){
+    return estado[sigla];
+
+  }else{
+    return "Estado não encontrado"
+  }
+
+}
+
+console.log(getNomeEstado("PE"))
+console.log(getNomeEstado("AA"))*/
+
+
+
+
+
+
+/*function calcularSalarioLiquido(salarioBase) {
+  var descontoVT = salarioBase * 0.02;
+  var descontoVR = salarioBase * 0.03;
+  var salarioLiquido = salarioBase - (descontoVT + descontoVR);
+
+  document.write("Salário líquido: R$ " + salarioLiquido.toFixed(2) + "<br>");
+}
+
+// Chamando a função com entrada do usuário
+var salario = parseFloat(prompt("Digite o salário-base do funcionário:"));
+calcularSalarioLiquido(salario);*/
+  //1
+  /*
+  function estado(sigla){
+    var estados={
+      "MA":"Maranhão", "PE":"Pernambuco","SP":"São Paulo","ES":"Espirito Santo","AM":"Amazônia","MG":"Minas Gerais", "AC":"Acre","BA":"Bahia"
+    }
+
+   sigla=sigla.toUpperCase();
+   if (estados[sigla] !== undefined) {
+        document.write("Estado: " + estados[sigla] + "<br>");
+    } else {
+        document.write("Estado Inválido! <br>");
+    }
+  }
+   var siglaest=prompt("sigla")
+   estado(siglaest)
+  */
+  
+  
+ 
+
+
+
+ /*function precototal(cod,qtd){
+
+var preco={
+  1001: 5.32,
+    1324: 6.45,
+    6548: 2.37,
+    987: 5.32,
+    7623: 6.45
+}
+ 
+if(preco[cod]!==undefined){
+var total=preco[cod]*qtd
+document.write("o codigo é"+cod+"e o total é"+total)
+ }else{ 
+  document.write("invalido")
+ }
+ }
+var cod=parseInt(prompt("Qual o codigo"))
+var qtd=parseInt(prompt("qual a qtd"))
+
+precototal(cod,qtd)*/
+
+
+
+//3
+/*function calcularSL(salarioBase){
+  var vt= 0.02*salarioBase;
+  var vr=0.03*salarioBase;
+  var liquido=salarioBase-(vr+vt)
+  document.write("salario é"+liquido)
+  
+}
+var salariob=parseFloat(prompt("Qual o seu salario"))
+calcularSL(salariob)*/
+
+
+
+
+//QUESTAO 04)
+
+/*
+
+function verificarConsumo(apartamento, consumo) {
+  document.write("Apartamento " + apartamento + ": Consumo de " + consumo + " kWh<br>");
+  if (consumo > 100) {
+    document.write("⚠️ Alerta: Consumo elevado!<br>");
+  }
+}
+
+// Chamando a função para 3 apartamentos
+verificarConsumo(parseInt(prompt("digite o numero do apartamento")), parseFloat(prompt("Digite o consumo do apartamento :")));
+verificarConsumo(parseInt(prompt("digite o numero do apartamento")), parseFloat(prompt("Digite o consumo do apartamento ")));
+verificarConsumo(parseInt(prompt("digite o numero do apartamento")), parseFloat(prompt("Digite o consumo do apartamento ")));*/
+
+
+/*
+//5
+/*
+function calcularMediaNotas() {
+  var notas = prompt("Digite as notas separadas por vírgula:").split(",").map(Number);
+  var soma = notas.reduce((total, nota) => total + nota, 0);
+  var media = soma / notas.length;
+
+  document.write("Média: " + media.toFixed(2) + " - ");
+  document.write(media >= 6 ? "Aprovado ✅<br>" : "Reprovado ❌<br>");
+}
+
+// Chamando a função
+calcularMediaNotas();
+*/
+//6
+/*function verificarPoluicao() {
+  var indice = parseFloat(prompt("Digite o índice de poluição:"));
+  var grupo = parseInt(prompt("Digite o grupo da empresa (1, 2 ou 3):"));
+
+  document.write("Índice de poluição: " + indice.toFixed(2) + "<br>");
+
+  if (indice >= 0.5) {
+    document.write("⚠️ Todos os grupos devem paralisar suas atividades!<br>");
+  } else if (indice >= 0.4 && grupo <= 2) {
+    document.write("⚠️ Indústrias do grupo 1 e 2 devem suspender suas atividades!<br>");
+  } else if (indice >= 0.3 && grupo == 1) {
+    document.write("⚠️ Indústrias do grupo 1 devem suspender suas atividades!<br>");
+  } else {
+    document.write("✅ Índice dentro do aceitável.<br>");
+  }
+}
+
+// Chamando a função
+verificarPoluicao();
+*/
+/*function media(notas){
+soma1=0;
+soma2=0;
+for (var i=0;i<notas.length;i++){
+soma1=soma1+notas[i]
+soma2=soma2+1
+}
+
+var med = soma1/soma2;
+
+if (med>=6){
+document.write ("Aprovado");
+}else{"Reprova"}
+
+return med
+}
+
+var a =[]
+
+var n = prompt ("tem nota? S ou N")
+while (n=="S"){
+var b= prompt ("Digite a nota:")
+b= parseInt(b)
+
+a.push(b)
+
+var n = prompt ("tem nota? S ou N")
+}
+
+var f= media(a);
+document.write (f)*/
+/*function verificarPoluicao(indice, grupo) {
+  document.write("Índice de poluição: " + indice.toFixed(2) + "<br>");
+
+  if (indice >= 0.5) {
+    document.write("⚠️ Todos os grupos devem paralisar suas atividades!<br>");
+  } else if (indice >= 0.4 && grupo <= 2) {
+    document.write("⚠️ Indústrias do grupo 1 e 2 devem suspender suas atividades!<br>");
+  } else if (indice >= 0.3 && grupo == 1) {
+    document.write("⚠️ Indústrias do grupo 1 devem suspender suas atividades!<br>");
+  } else {
+    document.write("✅ Índice dentro do aceitável.<br>");
+  }
+}
+
+
+var indicePoluicao = parseFloat(prompt("Digite o índice de poluição:"));
+var grupoIndustria = parseInt(prompt("Digite o grupo da empresa (1, 2 ou 3):"));
+verificarPoluicao(indicePoluicao, grupoIndustria);*/
+
+/*function apartamento(numero, consumo){
+  document.write(" ap: "+numero+"<br>"+" consumo: "+consumo+" kw ")
+  if(consumo>100){
+    document.write("alerta alto consumo")
+  }
+}
+apartamento(parseInt(prompt("qual o numero")),parseInt(prompt("qual o consumo?")))
+apartamento(parseInt(prompt("qual o numero")),parseInt(prompt("qual o consumo?")))
+apartamento(parseInt(prompt("qual o numero")),parseInt(prompt("qual o consumo?")))*/
+  </script>
+</body>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="resources/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+</head>
+<script>
+    var objt_reciclados = [
+        {
+            nome: 'Móbiles Brilhantes',
+            image: './resources/pagina diy/diy imagens/Móbiles Brilhantes .jpeg',
+            p: 'Corte os CDs em pedaços com formas variadas. Faça furos nas peças com um prego ou furadeira  Passe linha de nylon pelos furos, adicionando miçangas, se quiser.Prenda as fileiras a uma base, como um galho ou bastidor, e pendure em um local iluminado para refletir a luz.',
+            materiais: ['CDs ou DVDs antigos.',
+                'Tesoura resistente ou estilete',
+                'Linha de nylon ou barbante.',
+                'Argolas, contas ou miçangas (opcional).',
+                'Cola quente'
+            ]
+        },
+        {
+            nome: 'Camas para Pets',
+            image: './resources/pagina diy/diy imagens/Camas para Pets.jpeg',
+            p: 'Limpe bem o pneu e lixe, se necessário, Pinte com tinta spray ou esmalte à base de água e deixe secar.Coloque uma almofada no centro do pneu para formar a cama.Finalize decorando com o nome do pet ou outros detalhes.',
+            materiais: [
+
+                'Um pneu velho.',
+                'Tinta spray ou tinta esmalte à base de água.',
+                'Almofadas ou Enchimento.',
+                'Lixa (opcional)'
+
+            ]
+        },
+        {
+            nome: 'Tapetes Trançados (com roupas velhas)',
+            image: './resources/pagina diy/diy imagens/Tapetes Trançados.jpeg',
+            p: 'Corte roupas velhas em tiras longas. Junte três tiras, dê um nó e trance até o final. Enrole a trança em formato de espiral, costurando ou colando as camadas para formar o tapete. Finalize costurando bem as pontas.',
+            materiais:['Roupas velhas (camisetas, jeans, etc.).', 
+            'Tesoura',
+            'Agulha e linha ou cola quente'
+
+            ]
+        },
+
+        {
+            nome: 'Porta-lápis (com rolos de papel higiênico)',
+            image: './resources/pagina diy/diy imagens/Porta-lápis.jpeg',
+            p: 'Decore os rolos com papel, tecido ou tinta. Recorte uma base de papelão e cole os rolos nela, organizando-os no formato desejado. Finalize decorando a base e use para guardar lápis, canetas e outros materiais.',
+            materiais:['Rolos de papel higiênico ou papel toalha',
+                'Papel colorido, tecido ou tinta.',
+                'Cola branca ou quente.',
+                'Base de papelão.',
+                'Tesoura'
+            ]
+        },
+        {
+            nome: 'Bolsa (de caixa de leite)',
+            image: './resources/pagina diy/diy imagens/Bolsa de caixa de leite.jpeg',
+            p: 'Para fazer uma bolsa com caixas de leite, comece limpando bem as caixas e abrindo-as para que fiquem planas. Corte as peças no tamanho desejado, incluindo a base, as laterais, a frente, as costas e a tampa. Encape cada pedaço com tecido, papel adesivo ou outro material decorativo, garantindo que fiquem reforçados e bonitos. Depois, monte a estrutura da bolsa colando as peças com cola quente ou usando fita adesiva resistente. Para as alças, escolha fita de nylon, corda ou tecido, e fixe-as com cola ou passando por furos feitos com um furador. Por fim, decore como quiser e adicione um fecho, como velcro ou botão, para finalizar.',
+            materiais:['6 a 8 caixas de leite (limpas e abertas).',
+                'Tesoura ou estilete',
+                'Cola quente ou fita adesiva resistente.',
+                'Tecido, papel adesivo ou plástico para revestimento.',
+                'Fita de nylon, corda ou tecido para as alças.',
+                'Furador, velcro ou botão (opcional, para o fechamento).',
+            ]
+        },
+        {
+            nome: 'Vaso (de garrafa pet)',
+            image: './resources/pagina diy/diy imagens/vaso de garrafa pet.jpeg',
+            p: 'Para criar um vaso de plantas com garrafa PET, basta lavar e secar a garrafa, cortar a parte desejada (superior ou inferior), pintar se quiser personalizar e fazer pequenos furos no fundo para drenagem. Depois, adicione terra, plante sua muda e posicione o vaso no local escolhido. É simples e sustentável!',
+            materiais:[
+                'Garrafa PET',
+                'Tesoura ou Estilete',
+                'Tinta acrílica (opcional)',
+                'pincel',
+                'Terra e Planta',
+            ]
+        },
+
+    ];
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    var id = urlParams.get("id");
+    window.onload = function () {
+        var detalhe_titulo = document.getElementById("detalhe_titulo");
+        detalhe_titulo.innerHTML = objt_reciclados[id - 1].nome;
+        var detalhes_img = document.getElementById("img-detalhes");
+        detalhes_img.src = objt_reciclados[id - 1].image;
+        var passos = document.getElementById("passos");
+        passos.innerHTML = objt_reciclados[id - 1].p;
+        var listaMateriais = document.getElementById("lista-materiais");
+        objt_reciclados[id - 1].materiais.forEach(element => {
+            listaMateriais.innerHTML += "<li>" + element + "</li>";
+        });
+
+
+
+    };
+
+</script>
+
+<body>
+    <menu>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html"> ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </menu>
+    <div>
+        <div class="display-center">
+            <h1 id="detalhe_titulo">Móbiles Brilhantes</h1>
+        </div>
+        <div class="display-center">
+            <img src="./resources/pagina diy/diy imagens/Móbiles Brilhantes .jpeg" width="360px" id="img-detalhes">
+        </div>
+        <div class="diy-detalhes">
+            <h3>Materiais:</h3>
+            <ul id="lista-materiais">
+                <!--  <li>CDs ou DVDs antigos.</li>
+                <li>Tesoura resistente ou estilete.</li>
+                <li>Linha de nylon ou barbante.</li>
+                <li>Argolas, contas ou miçangas (opcional).</li>
+                <li>Cola quente.</li>-->
+            </ul>
+        </div>
+        <div class="diy-detalhes">
+            <h3>Passo a passo:</h3>
+            <p id="passos">Corte os CDs em pedaços com formas variadas. Faça furos nas peças com um prego ou furadeira.
+                Passe linha
+                de nylon pelos furos, adicionando miçangas, se quiser. Prenda as fileiras a uma base, como um galho ou
+                bastidor, e pendure em um local iluminado para refletir a luz.</p>
+        </div>
+    </div>
+</body>
+
+</html>
